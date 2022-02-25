@@ -1,16 +1,27 @@
 # pickit_challenge
 
-A new Flutter project.
+La evaluación consiste en resolver la necesidad de registrar servicios sobre automotores.
+Se pide lo siguiente:
+-Registrar Autos con los siguientes datos
+Campos mínimos requeridos: Marca, Modelo, Año, Patente, Color
+-Eliminar Auto
+-Modificar Auto
+-Obtener lista de todos los vehículos con sus respectivos propietarios
+-Obtener vehículo con su respectivo propietario.
+-Los propietarios, pueden tener más de un auto.
+-Registrar propietarios, Campos mínimos requeridos: Apellido, Nombre
+-Registrar transacción donde un propietario realiza uno o varios servicios posibles sobre el
+auto.
+Cada servicio deberá tener un costo asociado. Al final de la transacción devolver el
+presupuesto total.
+-Se quiere obtener el historial de servicio ejecutado por auto.
+-Por politicas del taller NO se permite brindar el servicio de “Pintura” para autos de color
+GRIS.
+Lista de servicio:
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Cambio de Aceite
+2. Cambio de Filtro
+3. Cambio de Correa
+4. Revisión General
+5. Pintura
+6. Otro
