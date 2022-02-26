@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541801076443",
+    "project_id": "pickit-challenge-1122d",
+    "storage_bucket": "pickit-challenge-1122d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541801076443:android:9d6365466376322bbd5efe",
+        "android_client_info": {
+          "package_name": "com.example.pickit_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541801076443-apis53m6doddt7df6lidh4uu910i10so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnPi7l68iwvMxcSza2drKSrlqkjai39Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541801076443-apis53m6doddt7df6lidh4uu910i10so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

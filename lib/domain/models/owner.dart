@@ -2,13 +2,13 @@ import 'dart:convert';
 
 class Owner {
   Owner({
-    required this.dni,
+    this.dni,
     required this.name,
     required this.lastname,
     required this.carsPatents,
   });
 
-  final int dni;
+  int? dni;
   final String name;
   final String lastname;
   final List<String> carsPatents;
@@ -25,7 +25,6 @@ class Owner {
       );
 
   Map<String, dynamic> toMap() => {
-        "dni": dni,
         "name": name,
         "lastname": lastname,
         "carsPatents": List<dynamic>.from(carsPatents.map((x) => x)),

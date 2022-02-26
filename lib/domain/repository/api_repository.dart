@@ -8,7 +8,7 @@ abstract class ApiRepository {
   Future<bool> updateCarInformation(Car car); // Actualizar un auto
   Future<List<CarsOfOwner>>
       getListOfCars(); // Obtener listado de autos con sus propietarios
-  Future<CarsOfOwner> getCard(
+  Future<CarsOfOwner> getCar(
       String patent); // Obtener un auto con su respectivo propietario
 
   // Future<bool> registerNewOwner(Owner owner); // Registrar

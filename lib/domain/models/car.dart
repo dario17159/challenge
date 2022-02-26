@@ -5,19 +5,19 @@ class Car {
     required this.brand,
     required this.model,
     required this.year,
-    required this.patent,
+    this.patent,
     required this.color,
     required this.ownerId,
-    required this.servicesId,
+    this.servicesId,
   });
 
   final String brand;
   final String model;
   final int year;
-  final String patent;
+  String? patent;
   final String color;
   final String ownerId;
-  final List<String> servicesId;
+  final List<String>? servicesId;
 
   factory Car.fromJson(String str) => Car.fromMap(json.decode(str));
 
@@ -30,16 +30,19 @@ class Car {
         patent: json["patent"],
         color: json["color"],
         ownerId: json["ownerId"],
-        servicesId: List<String>.from(json["servicesId"].map((x) => x)),
+        servicesId: json["servicesId"] != null
+            ? List<String>.from(json["servicesId"].map((x) => x))
+            : [],
       );
 
   Map<String, dynamic> toMap() => {
         "brand": brand,
         "model": model,
         "year": year,
-        "patent": patent,
         "color": color,
         "ownerId": ownerId,
-        "servicesId": List<dynamic>.from(servicesId.map((x) => x)),
+        "servicesId": servicesId != null
+            ? List<dynamic>.from(servicesId!.map((x) => x))
+            : [],
       };
 }
