@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:pickit_challenge/domain/models/cars_of_owner.dart';
 import 'package:pickit_challenge/domain/repository/api_repository.dart';
 
 class HomeController extends GetxController {
@@ -8,6 +9,8 @@ class HomeController extends GetxController {
     required this.apiRepository,
   });
 
+  RxList<CarsOfOwner> cars = <CarsOfOwner>[].obs;
+
   @override
   void onInit() {
     this._getListOfCars();
@@ -15,6 +18,8 @@ class HomeController extends GetxController {
   }
 
   Future<void> _getListOfCars() async{
-    // await this.apiRepository.getListOfCars();
+    final result =  await this.apiRepository.getListOfCars();
+    this.cars.clear();
+    this.cars.addAll(result);
   }
 }
